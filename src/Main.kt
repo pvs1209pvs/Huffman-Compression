@@ -1,7 +1,11 @@
+import java.lang.StringBuilder
+
 fun main() {
 
+    val myFile = BackgroundFile("abccaad")
+    myFile.buildBackgroundText(false)
 
-    val huffmanTree = makeHuffmanTree()
+    symbolCodes(makeHuffmanTree(myFile.userText), StringBuilder())
 
-    println(huffmanTree.rightChild!!.rightChild!!.rightChild!!.symbol)
+    println(myFile.buildBackgroundText(false))
 }
