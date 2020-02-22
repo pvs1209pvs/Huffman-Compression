@@ -1,30 +1,51 @@
-import java.math.BigInteger
 import java.util.*
 
-var codeMapping = mutableMapOf<String, BigInteger>()
-private var codeMappingInvrs = mutableMapOf<String, String>()
-private var numCodes = 0
+var codeMapping = mutableMapOf<String, Int>()
+var codeMappingInvrs = mutableMapOf<String, String>()
 
 
 fun decodeText(encodedText: String): String {
 
+    //{0=a, 10=r, 110=p, 111=m}
+
+    println(codeMappingInvrs)
+    println(encodedText)
+
     val ascii = StringBuilder()
-    val decoded = StringBuilder()
+    val d = StringBuilder()
 
-    for (x in encodedText) {
 
-        decoded.append(x)
+    for (element in encodedText) {
 
-        if (codeMappingInvrs[decoded.toString()] != null) {
-            ascii.append(codeMappingInvrs[decoded.toString()])
-            decoded.clear()
+        d.append(element)
+
+        println(d)
+
+        if(codeInterpreter(d.toString())==1){
+            ascii.append(codeMappingInvrs[d.toString()])
+            d.clear()
         }
 
     }
 
+
+
     return ascii.toString()
 
 }
+
+private fun codeInterpreter(crntCode: String): Int {
+
+    var freq: Int = 0
+
+    for (c in codeMappingInvrs.keys) {
+        if (c.startsWith(crntCode)) freq++
+    }
+
+    return freq
+
+}
+
 
 fun encodedText(text: String): String {
 
@@ -42,22 +63,21 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
     var myCode = code
 
     if (huffmanTree.leftChild != null) {
-        myCode+="0"
+        myCode += "0"
         symbolCodes(huffmanTree.leftChild!!, myCode)
     }
 
 
     if (huffmanTree.leftChild == null && huffmanTree.rightChild == null) {
-        codeMapping[huffmanTree.symbol!!.symbol] = BigInteger(myCode.toInt().toString())
+        codeMapping[huffmanTree.symbol!!.symbol] = myCode.toInt()
         codeMappingInvrs[myCode.toInt().toString()] = huffmanTree.symbol!!.symbol
-        // println("${huffmanTree.symbol!!.symbol} ${myCode.toInt()}")
     }
 
     /* cut the zero added by left branch */
-    myCode = (myCode.substring(0,myCode.length-1))
+    myCode = (myCode.substring(0, myCode.length - 1))
 
     if (huffmanTree.rightChild != null) {
-        myCode+="1"
+        myCode += "1"
         symbolCodes(huffmanTree.rightChild!!, myCode)
     }
 
@@ -69,16 +89,13 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
 fun makeHuffmanTree(input: String): HuffmanNode {
 
     val symbPQ = symbolPriorityQueue(input)
-    numCodes = symbPQ.size
-
-
 
     while (symbPQ.size > 1) {
 
         val l: HuffmanNode = symbPQ.remove()
         val r: HuffmanNode = symbPQ.remove()
 
-        val hmNode = HuffmanNode(Symbol(l.symbol!!.symbol + r.symbol!!.symbol, l.symbol!!.freq + r.symbol!!.freq), l,r)
+        val hmNode = HuffmanNode(Symbol(l.symbol!!.symbol + r.symbol!!.symbol, l.symbol!!.freq + r.symbol!!.freq), l, r)
 
         symbPQ.add(hmNode)
 
@@ -111,15 +128,15 @@ private fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
  * Returns the fequency of every symbol.
  * @param input counts the frequency of every symbol in this text
  */
-private fun symbolFrequency(input: String): Map<Char, BigInteger> {
+private fun symbolFrequency(input: String): Map<Char, Int> {
 
-    val symbFreq = mutableMapOf<Char, BigInteger>()
+    val symbFreq = mutableMapOf<Char, Int>()
 
     for (x in input) {
         if (!symbFreq.containsKey(x)) {
-            symbFreq[x] = BigInteger("1")
+            symbFreq[x] = 1
         } else {
-            symbFreq[x] = symbFreq.getValue(x) + BigInteger("1")
+            symbFreq[x] = symbFreq.getValue(x) + 1
         }
     }
 

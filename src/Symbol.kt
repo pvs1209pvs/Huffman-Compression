@@ -1,6 +1,6 @@
 import java.math.BigInteger
 
-class Symbol(val symbol: String, val freq: BigInteger) : Comparable<Symbol> {
+class Symbol(val symbol: String, val freq: Int) : Comparable<Symbol> {
 
     override fun compareTo(other: Symbol): Int {
         return freq.compareTo(other.freq)
