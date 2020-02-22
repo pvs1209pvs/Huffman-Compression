@@ -1,20 +1,21 @@
+import java.math.BigInteger
 import java.util.*
 
-private var codeMapping = mutableMapOf<String, Int>()
-private var codeMappingInvrs = mutableMapOf<String,String>()
+var codeMapping = mutableMapOf<String, BigInteger>()
+private var codeMappingInvrs = mutableMapOf<String, String>()
 private var numCodes = 0
 
 
-fun decodeText(encodedText:String):String{
+fun decodeText(encodedText: String): String {
 
     val ascii = StringBuilder()
     val decoded = StringBuilder()
 
-    for (x in encodedText){
+    for (x in encodedText) {
 
         decoded.append(x)
 
-        if(codeMappingInvrs[decoded.toString()]!=null){
+        if (codeMappingInvrs[decoded.toString()] != null) {
             ascii.append(codeMappingInvrs[decoded.toString()])
             decoded.clear()
         }
@@ -25,9 +26,9 @@ fun decodeText(encodedText:String):String{
 
 }
 
-fun encodedText(text:String):String{
+fun encodedText(text: String): String {
 
-    symbolCodes(makeHuffmanTree(text),StringBuilder())
+    symbolCodes(makeHuffmanTree(text), "")
 
     val encodedText = StringBuilder()
     for (x in text)
@@ -36,30 +37,28 @@ fun encodedText(text:String):String{
 
 }
 
-private fun symbolCodes(huffmanTree: HuffmanNode, code: StringBuilder) {
+fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
+
+    var myCode = code
 
     if (huffmanTree.leftChild != null) {
-        symbolCodes(huffmanTree.leftChild!!, code)
+        myCode+="0"
+        symbolCodes(huffmanTree.leftChild!!, myCode)
     }
+
 
     if (huffmanTree.leftChild == null && huffmanTree.rightChild == null) {
-        if (codeMapping.size == numCodes - 1) {
-            val symb:String = huffmanTree.symbol!!.symbol
-            val c:Int = "$code".toInt()
-            codeMapping[symb] = c
-            codeMappingInvrs[c.toString()] = symb
-        }
-        else {
-            val symb:String = huffmanTree.symbol!!.symbol
-            val c:Int = "${code}0".toInt()
-            codeMapping[symb] = c
-            codeMappingInvrs[c.toString()] = symb
-        }
+        codeMapping[huffmanTree.symbol!!.symbol] = BigInteger(myCode.toInt().toString())
+        codeMappingInvrs[myCode.toInt().toString()] = huffmanTree.symbol!!.symbol
+        // println("${huffmanTree.symbol!!.symbol} ${myCode.toInt()}")
     }
 
+    /* cut the zero added by left branch */
+    myCode = (myCode.substring(0,myCode.length-1))
+
     if (huffmanTree.rightChild != null) {
-        code.append("1")
-        symbolCodes(huffmanTree.rightChild!!, code)
+        myCode+="1"
+        symbolCodes(huffmanTree.rightChild!!, myCode)
     }
 
 }
@@ -67,20 +66,24 @@ private fun symbolCodes(huffmanTree: HuffmanNode, code: StringBuilder) {
 /**
  * Returns the final tree which is the last element left in the priority queue.
  */
-private fun makeHuffmanTree(input: String): HuffmanNode {
+fun makeHuffmanTree(input: String): HuffmanNode {
 
     val symbPQ = symbolPriorityQueue(input)
     numCodes = symbPQ.size
 
+
+
     while (symbPQ.size > 1) {
 
-        val r: HuffmanNode = symbPQ.remove()
         val l: HuffmanNode = symbPQ.remove()
-        val hmNode = HuffmanNode(Symbol(l.symbol!!.symbol + r.symbol!!.symbol, l.symbol!!.freq + r.symbol!!.freq), r, l)
+        val r: HuffmanNode = symbPQ.remove()
+
+        val hmNode = HuffmanNode(Symbol(l.symbol!!.symbol + r.symbol!!.symbol, l.symbol!!.freq + r.symbol!!.freq), l,r)
 
         symbPQ.add(hmNode)
 
     }
+
 
     return symbPQ.remove()
 
@@ -108,15 +111,15 @@ private fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
  * Returns the fequency of every symbol.
  * @param input counts the frequency of every symbol in this text
  */
-private fun symbolFrequency(input: String): Map<Char, Int> {
+private fun symbolFrequency(input: String): Map<Char, BigInteger> {
 
-    val symbFreq = mutableMapOf<Char, Int>()
+    val symbFreq = mutableMapOf<Char, BigInteger>()
 
     for (x in input) {
         if (!symbFreq.containsKey(x)) {
-            symbFreq[x] = 1
+            symbFreq[x] = BigInteger("1")
         } else {
-            symbFreq[x] = symbFreq.getValue(x) + 1
+            symbFreq[x] = symbFreq.getValue(x) + BigInteger("1")
         }
     }
 
