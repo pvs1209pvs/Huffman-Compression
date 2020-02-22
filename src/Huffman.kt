@@ -1,19 +1,60 @@
 import java.util.*
 
-var codeMapping = mutableMapOf<String, Int>()
-var numCodes = 0
+private var codeMapping = mutableMapOf<String, Int>()
+private var codeMappingInvrs = mutableMapOf<String,String>()
+private var numCodes = 0
 
-fun symbolCodes(huffmanTree: HuffmanNode, code: StringBuilder) {
+
+fun decodeText(encodedText:String):String{
+
+    val ascii = StringBuilder()
+    val decoded = StringBuilder()
+
+    for (x in encodedText){
+
+        decoded.append(x)
+
+        if(codeMappingInvrs[decoded.toString()]!=null){
+            ascii.append(codeMappingInvrs[decoded.toString()])
+            decoded.clear()
+        }
+
+    }
+
+    return ascii.toString()
+
+}
+
+fun encodedText(text:String):String{
+
+    symbolCodes(makeHuffmanTree(text),StringBuilder())
+
+    val encodedText = StringBuilder()
+    for (x in text)
+        encodedText.append(codeMapping[x.toString()])
+    return encodedText.toString()
+
+}
+
+private fun symbolCodes(huffmanTree: HuffmanNode, code: StringBuilder) {
 
     if (huffmanTree.leftChild != null) {
         symbolCodes(huffmanTree.leftChild!!, code)
     }
 
     if (huffmanTree.leftChild == null && huffmanTree.rightChild == null) {
-        if (codeMapping.size == numCodes - 1)
-            codeMapping[huffmanTree.symbol!!.symbol] = "$code".toInt()
-        else
-            codeMapping[huffmanTree.symbol!!.symbol] = "${code}0".toInt()
+        if (codeMapping.size == numCodes - 1) {
+            val symb:String = huffmanTree.symbol!!.symbol
+            val c:Int = "$code".toInt()
+            codeMapping[symb] = c
+            codeMappingInvrs[c.toString()] = symb
+        }
+        else {
+            val symb:String = huffmanTree.symbol!!.symbol
+            val c:Int = "${code}0".toInt()
+            codeMapping[symb] = c
+            codeMappingInvrs[c.toString()] = symb
+        }
     }
 
     if (huffmanTree.rightChild != null) {
@@ -26,7 +67,7 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: StringBuilder) {
 /**
  * Returns the final tree which is the last element left in the priority queue.
  */
-fun makeHuffmanTree(input: String): HuffmanNode {
+private fun makeHuffmanTree(input: String): HuffmanNode {
 
     val symbPQ = symbolPriorityQueue(input)
     numCodes = symbPQ.size
@@ -49,7 +90,7 @@ fun makeHuffmanTree(input: String): HuffmanNode {
 /**
  * Returns the priority queue of with every symbol in it.
  */
-fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
+private fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
 
     val symbPQ = PriorityQueue<HuffmanNode>()
 
@@ -67,7 +108,7 @@ fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
  * Returns the fequency of every symbol.
  * @param input counts the frequency of every symbol in this text
  */
-fun symbolFrequency(input: String): Map<Char, Int> {
+private fun symbolFrequency(input: String): Map<Char, Int> {
 
     val symbFreq = mutableMapOf<Char, Int>()
 
