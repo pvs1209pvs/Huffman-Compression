@@ -4,4 +4,4 @@ Algorithm for lossless compression for text by designating unique variable-sized
 All the characters existing in the text file, variable-sized binary codes, and ASCII values are used to encode and decode the text.
 
 # Author(s)
-Paravir Singh (pvs1209pvs)
+Paramvir Singh (pvs1209pvs)
