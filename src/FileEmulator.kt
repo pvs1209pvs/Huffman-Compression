@@ -54,12 +54,24 @@ class FileEmulator(var userText: String = "") {
      * converts ascii text into simple universal binary text.
      */
     private fun asciiToBin(): String {
+
         val text = StringBuilder()
+
         for (x in userText) {
-            val v = Integer.toBinaryString(x.toByte().toInt())
-            text.append(v)
+
+            val v = Integer.toBinaryString(x.toByte().toInt()).toString()
+            var zeros= ""
+
+            for (i in  v.length until 7){
+                zeros += "0"
+            }
+
+            text.append(zeros+v)
+
         }
+
         return text.toString()
+
     }
 
 

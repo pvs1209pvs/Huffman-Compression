@@ -9,6 +9,7 @@
       <change afterPath="$PROJECT_DIR$/../../Java-Projects/Getting-Around/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java-Projects/Getting-Around/src/MergeSortedList.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java-Projects/KotlinFX/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Huffman.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/HuffmanNode.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Symbol.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ASS/main.py" beforeDir="false" />
@@ -60,12 +61,12 @@
       <change beforePath="$PROJECT_DIR$/../Hackerrank/src/Anagram.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hackerrank/src/CountingSort1.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/FileEmulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/FileEmulator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/Symbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileEmulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEmulator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huffman.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Symbol.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" afterDir="false" />
@@ -124,23 +125,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="235">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Huffman.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="3058">
+              <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -157,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileEmulator.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="412">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -180,10 +178,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/HuffmanNode.kt" />
         <option value="$PROJECT_DIR$/src/BackgroundFile.kt" />
-        <option value="$PROJECT_DIR$/src/FileEmulator.kt" />
         <option value="$PROJECT_DIR$/src/Symbol.kt" />
-        <option value="$PROJECT_DIR$/src/Main.kt" />
         <option value="$PROJECT_DIR$/src/Huffman.kt" />
+        <option value="$PROJECT_DIR$/src/FileEmulator.kt" />
+        <option value="$PROJECT_DIR$/src/Main.kt" />
       </list>
     </option>
   </component>
@@ -290,12 +288,13 @@
       <updated>1582342937569</updated>
       <workItem from="1582342941400" duration="4389000" />
       <workItem from="1582350225202" duration="13007000" />
-      <workItem from="1582393826559" duration="1358000" />
+      <workItem from="1582393826559" duration="4769000" />
+      <workItem from="1582426250155" duration="243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18754000" />
+    <option name="totallyTimeSpent" value="22408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="26" width="960" height="1009" extended-state="4" />
@@ -310,7 +309,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4214689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42372882" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39887005" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,7 +317,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32881355" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3299435" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3299435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -379,10 +378,10 @@
     <entry file="file://$PROJECT_DIR$/HuffmanCompression.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileEmulator.kt">
+    <entry file="file://$PROJECT_DIR$/src/Huffman.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="3058">
+          <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -393,20 +392,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.kt">
+    <entry file="file://$PROJECT_DIR$/src/FileEmulator.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Huffman.kt">
+    <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="257">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>

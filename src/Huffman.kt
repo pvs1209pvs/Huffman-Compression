@@ -1,44 +1,43 @@
 import java.util.*
 
-var codeMapping = mutableMapOf<String, Int>()
-var codeMappingInvrs = mutableMapOf<String, String>()
+var codeMapping = mutableMapOf<String, String>()
+var codeMappingInvr = mutableMapOf<String, String>()
 
-
+/**
+ * converts the continuous stream of huffman code into ascii text.
+ * @param encodedText continuous stream of huffman encoded ascii text.
+ * @return the original ascii text.
+ */
 fun decodeText(encodedText: String): String {
-
-    //{0=a, 10=r, 110=p, 111=m}
-
-    println(codeMappingInvrs)
-    println(encodedText)
 
     val ascii = StringBuilder()
     val d = StringBuilder()
-
 
     for (element in encodedText) {
 
         d.append(element)
 
-        println(d)
-
         if(codeInterpreter(d.toString())==1){
-            ascii.append(codeMappingInvrs[d.toString()])
+            ascii.append(codeMappingInvr[d.toString()])
             d.clear()
         }
 
     }
 
-
-
     return ascii.toString()
 
 }
 
+/**
+ * @param crntCode is code whose associated text needs to be returned.
+ * @return count of how many codes starts with crntCode. If the return value is greater than
+ * one then this is not the unique code and searched needs to continued.
+ */
 private fun codeInterpreter(crntCode: String): Int {
 
-    var freq: Int = 0
+    var freq = 0
 
-    for (c in codeMappingInvrs.keys) {
+    for (c in codeMappingInvr.keys) {
         if (c.startsWith(crntCode)) freq++
     }
 
@@ -46,18 +45,28 @@ private fun codeInterpreter(crntCode: String): Int {
 
 }
 
+/**
+ * Converts ascii text into huffman coding.
+ * @param asciiText is the text from the file.
+ * @return continuous huffman code representation of the asciiText.
+ */
+fun encodedText(asciiText: String): String {
 
-fun encodedText(text: String): String {
-
-    symbolCodes(makeHuffmanTree(text), "")
+    symbolCodes(makeHuffmanTree(asciiText), "")
 
     val encodedText = StringBuilder()
-    for (x in text)
+
+    for (x in asciiText)
         encodedText.append(codeMapping[x.toString()])
+
     return encodedText.toString()
 
 }
 
+/**
+ * @param huffmanTree is the final huffman tree.
+ * @param code huffman codes for each symbol build while traversing the tree.
+ */
 fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
 
     var myCode = code
@@ -67,10 +76,9 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
         symbolCodes(huffmanTree.leftChild!!, myCode)
     }
 
-
     if (huffmanTree.leftChild == null && huffmanTree.rightChild == null) {
-        codeMapping[huffmanTree.symbol!!.symbol] = myCode.toInt()
-        codeMappingInvrs[myCode.toInt().toString()] = huffmanTree.symbol!!.symbol
+        codeMapping[huffmanTree.symbol!!.symbol] = myCode
+        codeMappingInvr[myCode] = huffmanTree.symbol!!.symbol
     }
 
     /* cut the zero added by left branch */
@@ -84,11 +92,12 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
 }
 
 /**
- * Returns the final tree which is the last element left in the priority queue.
+ * @param asciiText is the text from the file.
+ * @return final Huffman tree which is the last element left in the priority queue.
  */
-fun makeHuffmanTree(input: String): HuffmanNode {
+fun makeHuffmanTree(asciiText: String): HuffmanNode {
 
-    val symbPQ = symbolPriorityQueue(input)
+    val symbPQ = symbolPriorityQueue(asciiText)
 
     while (symbPQ.size > 1) {
 
@@ -101,20 +110,20 @@ fun makeHuffmanTree(input: String): HuffmanNode {
 
     }
 
-
     return symbPQ.remove()
 
 }
 
 
 /**
- * Returns the priority queue of with every symbol in it.
+ * @param asciiText is the text from the file.
+ * @return the priority queue of with every symbol in it.
  */
-private fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
+private fun symbolPriorityQueue(asciiText: String): PriorityQueue<HuffmanNode> {
 
     val symbPQ = PriorityQueue<HuffmanNode>()
 
-    val symbFreq = symbolFrequency(input)
+    val symbFreq = symbolFrequency(asciiText)
 
     for (x in symbFreq.entries) {
         symbPQ.add(HuffmanNode(Symbol(x.key.toString(), x.value)))
@@ -125,21 +134,21 @@ private fun symbolPriorityQueue(input: String): PriorityQueue<HuffmanNode> {
 }
 
 /**
- * Returns the fequency of every symbol.
- * @param input counts the frequency of every symbol in this text
+ * Returns the frequency of every symbol present in the file.
+ * @param asciiText ascii text from the file.
+ * @return map of count for each ascii symbol.
  */
-private fun symbolFrequency(input: String): Map<Char, Int> {
+private fun symbolFrequency(asciiText: String): Map<Char, Int> {
 
     val symbFreq = mutableMapOf<Char, Int>()
 
-    for (x in input) {
+    for (x in asciiText) {
         if (!symbFreq.containsKey(x)) {
             symbFreq[x] = 1
         } else {
             symbFreq[x] = symbFreq.getValue(x) + 1
         }
     }
-
 
     return symbFreq
 
