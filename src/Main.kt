@@ -2,11 +2,10 @@ fun main() {
 
     val myFile = FileEmulator("huffman compression")
 
-    val huffmanNode = makeHuffmanTree(myFile.userText)
-    symbolCodes(huffmanNode, "")
+    symbolCodes(makeHuffmanTree(myFile.userText), "")
 
-    val asciiToBin = myFile.buildBinText(false)
-    val asciiToHuffBin = myFile.buildBinText(true)
+    val asciiToBin = myFile.asciiToBinStream(false)
+    val asciiToHuffBin = myFile.asciiToBinStream(true)
 
     val binToAscii = myFile.binaryToAscii(asciiToBin, false)
     val huffBinToAscii = myFile.binaryToAscii(asciiToHuffBin, true)
