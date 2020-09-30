@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f9e54be-5d32-4956-8202-464d1f4c7140" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ASS/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FuckThis/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/COSC_2P13_ASSIGN_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/libraries/jackson_databind_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GettingAround/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaFX/JavaFX.iml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/ASS/main.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/FuckThis/src/Main.java" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/COSC_2P13_ASSIGN_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/libraries/jackson_databind_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/GettingAround/input.txt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Java/JavaFX/JavaFX.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileEmulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEmulator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huffman.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
@@ -31,16 +31,16 @@
       <change beforePath="$PROJECT_DIR$/../WordPuzzle/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Main.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Puzzle.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Anagram.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/CountingSort1.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/MyClass.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/RollingDie.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/User.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinBasic/src/demo/datafile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinTut/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KotlinTut/src/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Pinging/src/Main.java" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/Anagram.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/CountingSort1.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/Main.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/MyClass.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/RollingDie.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/User.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/datafile.txt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinTut/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/KotlinTut/src/Main.kt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/Pinging/src/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -196,7 +196,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="HuffmanCompression" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
