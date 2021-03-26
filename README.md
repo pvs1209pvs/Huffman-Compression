@@ -7,6 +7,3 @@ All the characters existing in the text file, variable-sized binary codes, and A
  <img src="Huffman_tree_2.svg.png">
  Image source: https://en.wikipedia.org/wiki/Huffman_coding#/media/File:Huffman_tree_2.svg
 </div>
-
-# Author(s)
-Paramvir Singh (pvs1209pvs)
