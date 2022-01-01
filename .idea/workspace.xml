@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9e54be-5d32-4956-8202-464d1f4c7140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pvs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HuffmanCompression.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HuffmanCompression.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/FileEmulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanNode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/MainKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/Symbol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileEmulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileEmulator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HuffmanNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HuffmanNode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Symbol.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HuffmanCompression/test/java/HuffmanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/HuffmanCompression/test/java/HuffmanTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileEmulator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +156,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HuffmanTest">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="HuffmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HuffmanCompression" />
       <extension name="coverage">
@@ -204,9 +197,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.HuffmanTest" />
         <item itemvalue="JUnit.HuffmanTest.plain text encoded" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>

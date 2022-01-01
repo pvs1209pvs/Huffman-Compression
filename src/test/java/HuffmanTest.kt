@@ -1,23 +1,21 @@
 package test.java
 
-import main.java.FileEmulator
-import main.java.makeHuffmanTree
-import main.java.symbolCodes
+import main.java.Huffman
+
 import org.junit.Assert
 import org.junit.Test
 
 class HuffmanTest {
 
     @Test
-    fun `plain text encoded`(){
+    fun `plain text encoded`() {
 
-        val myFile = FileEmulator("param")
+        val plainTexts = listOf("~!@#\$%^&*()_+{}|:\"<>?[];'./\\", "hello world")
 
-        symbolCodes(makeHuffmanTree(myFile.userText), "")
-
-        val asciiToHuffBin = myFile.asciiToBinStream(true)
-
-        Assert.assertEquals(asciiToHuffBin, "1100100111")
+        plainTexts.forEach {
+            val huffman = Huffman(it)
+            Assert.assertEquals(it, huffman.decodedText)
+        }
 
     }
 }
