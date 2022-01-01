@@ -1,3 +1,5 @@
+package main.java
+
 class Symbol(val symbol: String, val freq: Int) : Comparable<Symbol> {
 
     override fun compareTo(other: Symbol): Int {

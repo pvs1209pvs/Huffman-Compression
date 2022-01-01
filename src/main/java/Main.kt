@@ -1,6 +1,8 @@
+package main.java
+
 fun main() {
 
-    val myFile = FileEmulator("huffman compression")
+    val myFile = FileEmulator("param")
 
     symbolCodes(makeHuffmanTree(myFile.userText), "")
 

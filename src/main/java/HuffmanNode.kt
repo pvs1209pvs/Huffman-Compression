@@ -1,3 +1,5 @@
+package main.java
+
 class HuffmanNode(var symbol: Symbol? = null, var leftChild: HuffmanNode? = null, var rightChild: HuffmanNode? = null) : Comparable<HuffmanNode> {
 
     override fun compareTo(other: HuffmanNode): Int {

@@ -1,3 +1,5 @@
+package main.java
+
 class FileEmulator(var userText: String = "") {
 
     /**
@@ -8,19 +10,18 @@ class FileEmulator(var userText: String = "") {
      * simple binary stream.
      * @return ascii text converted from the binary stream.
      */
-    fun binaryToAscii(binText: String, isEncoded: Boolean): String {
-        return if (isEncoded) huffBinToAscii(binText)
+    fun binaryToAscii(binText: String, isEncoded: Boolean) =
+        if (isEncoded) huffBinToAscii(binText)
         else binToAscii(binText)
-    }
+
 
     /**
      * Converts huffman binary stream to ascii text.
      * @param binText huffman binary binary to be converted into ascii text.
      * @return ascii text converted from huffman binary stream.
      */
-    private fun huffBinToAscii(binText: String): String {
-        return decodeText(binText)
-    }
+    private fun huffBinToAscii(binText: String) = decodeText(binText)
+
 
     /**
      * Converts binary stream to ascii text.
@@ -34,6 +35,7 @@ class FileEmulator(var userText: String = "") {
 
         for (x in binText) {
             b.append(x)
+
             if (b.length == 7) {
                 ascii.append(Integer.parseInt(b.toString(), 2).toChar())
                 b.clear()
@@ -50,21 +52,17 @@ class FileEmulator(var userText: String = "") {
      * for huffman binary stream and false for simple binary stream.
      * @return the binary form of the user text.
      */
-    fun asciiToBinStream(isEncoded: Boolean): String {
-        return if (isEncoded) {
-            asciiToHuffBin()
-        } else {
-            asciiToBin()
-        }
-    }
+    fun asciiToBinStream(isEncoded: Boolean) =
+        if (isEncoded) asciiToHuffBin()
+        else asciiToBin()
+
 
     /**
      * Converts ascii character into huffman binary stream.
      * @return huffman binary stream converted of ascii text.
      */
-    private fun asciiToHuffBin(): String {
-        return encodedText(userText)
-    }
+    private fun asciiToHuffBin() = encodedText(userText)
+
 
     /**
      * Converts ascii text into simple binary stream.
@@ -83,6 +81,7 @@ class FileEmulator(var userText: String = "") {
                 zeros += "0"
             }
 
+            println()
             text.append(zeros + v)
 
         }

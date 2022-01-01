@@ -1,49 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9e54be-5d32-4956-8202-464d1f4c7140" name="Default Changelist" comment="">
-      <change beforePath="$USER_HOME$/ASS/main.py" beforeDir="false" />
-      <change beforePath="$USER_HOME$/FuckThis/src/Main.java" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/COSC_2P13_ASSIGN_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/libraries/jackson_databind_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/GettingAround/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/GettingAround/input.txt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Java/JavaFX/JavaFX.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileEmulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileEmulator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huffman.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Symbol.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HuffmanCompression/src/BackgroundFile.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HuffmanCompression/src/Huffman.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HuffmanCompression/src/HuffmanNode.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HuffmanCompression/src/Symbol.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/src/SinkFinder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sink-Finder/src/demo/SinkFinder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WordPuzzle/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WordPuzzle/src/Puzzle.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/Anagram.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/CountingSort1.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/Main.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/MyClass.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/RollingDie.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/User.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinBasic/src/demo/datafile.txt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinTut/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/KotlinTut/src/Main.kt" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Pinging/src/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuffmanCompression.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HuffmanCompression.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/FileEmulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/MainKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/Symbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileEmulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileEmulator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HuffmanNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HuffmanNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Symbol.kt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,51 +45,25 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Huffman.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Symbol.kt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileEmulator.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -123,6 +76,9 @@
         <option value="$PROJECT_DIR$/src/Huffman.kt" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -140,6 +96,7 @@
     <option name="width" value="960" />
     <option name="height" value="1009" />
   </component>
+  <component name="ProjectId" id="235ye5ibt5W5Aww6nJeQmZohe7l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -166,10 +123,21 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,38 +151,66 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.java" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HuffmanTest">
+    <configuration name="HuffmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HuffmanCompression" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.HuffmanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanTest.plain text encoded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HuffmanCompression" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.HuffmanTest" />
+      <option name="METHOD_NAME" value="plain text encoded" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.MainKt" />
+      <module name="HuffmanCompression" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HuffmanTest" />
+        <item itemvalue="JUnit.HuffmanTest.plain text encoded" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -306,6 +302,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/HuffmanNode.kt">
