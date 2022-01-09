@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7f9e54be-5d32-4956-8202-464d1f4c7140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuffmanCompression.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HuffmanCompression.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/Symbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/HuffmanCompression/test/java/HuffmanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/HuffmanCompression/test/java/HuffmanTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plain.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Symbol.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +157,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="JUnit.HuffmanTest">
     <configuration name="HuffmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HuffmanCompression" />
       <extension name="coverage">
@@ -166,6 +169,22 @@
       <option name="PACKAGE_NAME" value="test.java" />
       <option name="MAIN_CLASS_NAME" value="test.java.HuffmanTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanTest.check if encoded string is same as decoded string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HuffmanCompression" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.HuffmanTest" />
+      <option name="METHOD_NAME" value="check if encoded string is same as decoded string" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,8 +214,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.HuffmanTest" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.HuffmanTest.check if encoded string is same as decoded string" />
         <item itemvalue="JUnit.HuffmanTest.plain text encoded" />
       </list>
     </recent_temporary>
