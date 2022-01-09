@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9e54be-5d32-4956-8202-464d1f4c7140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/param.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HuffmanCompression.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/Symbol.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/HuffmanCompression/META-INF/HuffmanCompression.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/HuffmanCompression/test/java/HuffmanTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileEmulator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/HuffmanKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanCompression/main/java/Symbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HuffmanTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Symbol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Symbol.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +128,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Brock/InterviewCodingQues" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />

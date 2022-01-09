@@ -2,11 +2,12 @@ package main.java
 
 import java.io.File
 import java.util.*
+import java.util.stream.Collectors
 
-var codeMapping = mutableMapOf<String, String>()
-var codeMappingInvr = mutableMapOf<String, String>()
+//var codeMapping = mutableMapOf<String, String>()
+//var codeMappingInvr = mutableMapOf<String, String>()
 
-class EncryptedFile(val inversedCodes: Map<String, String>, val encrypted: String)
+class EncryptedFile(val inversedCodes: MutableMap<String, String>, val encrypted: String)
 
 /**
  * Converts the continuous stream of huffman code to ascii text.
@@ -23,7 +24,7 @@ fun decodeText(): String {
 
         d.append(it)
 
-        if (codeInterpreter(d.toString()) == 1) {
+        if (codeInterpreter(d.toString(), encryptedFile.inversedCodes) == 1) {
             ascii.append(encryptedFile.inversedCodes[d.toString()])
             d.clear()
         }
@@ -41,13 +42,15 @@ fun decodeText(): String {
  */
 fun encodedText(asciiText: String) {
 
-    symbolCodes(makeHuffmanTree(asciiText), "")
+    val codeMapping = mutableMapOf<String, String>()
+    val codeMappingInvr = mutableMapOf<String, String>()
+    symbolCodes(makeHuffmanTree(asciiText), "", codeMapping, codeMappingInvr)
 
     val encodedText = buildString {
         asciiText.forEach { append(codeMapping[it.toString()]) }
     }
 
-    writeEncryptedFile(encodedText)
+    writeEncryptedFile(encodedText, codeMappingInvr)
 
 }
 
@@ -70,7 +73,7 @@ fun readEncryptedFile(): EncryptedFile {
 
 }
 
-fun writeEncryptedFile(encodedText: String) {
+fun writeEncryptedFile(encodedText: String, codeMappingInvr: MutableMap<String, String>) {
 
     File("output.txt").bufferedWriter().use {
 
@@ -89,10 +92,11 @@ fun writeEncryptedFile(encodedText: String) {
 /**
  * Count of how many codes starts with crntCode.
  * @param crntCode huffman code whose associated character needs to be returned.
- * @return non-negative number repsenting how many codes out of all the codes start
+ * @return non-negative number representing how many codes out of all the codes start
  * with crntCode.
  */
-private fun codeInterpreter(crntCode: String) = codeMappingInvr.keys.count { it.startsWith(crntCode) }
+private fun codeInterpreter(crntCode: String, codeMappingInvr: MutableMap<String, String>) =
+    codeMappingInvr.keys.count { it.startsWith(crntCode) }
 
 /**
  * Create prefix unique codes for every character present in the file. Stores all
@@ -100,13 +104,18 @@ private fun codeInterpreter(crntCode: String) = codeMappingInvr.keys.count { it.
  * @param huffmanTree huffman tree.
  * @param code huffman codes for each character
  */
-fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
+fun symbolCodes(
+    huffmanTree: HuffmanNode,
+    code: String,
+    codeMapping: MutableMap<String, String>,
+    codeMappingInvr: MutableMap<String, String>
+) {
 
     var myCode = code
 
     if (huffmanTree.leftChild != null) {
         myCode += "0"
-        symbolCodes(huffmanTree.leftChild!!, myCode)
+        symbolCodes(huffmanTree.leftChild!!, myCode, codeMapping, codeMappingInvr)
     }
 
     if (huffmanTree.leftChild == null && huffmanTree.rightChild == null) {
@@ -119,7 +128,7 @@ fun symbolCodes(huffmanTree: HuffmanNode, code: String) {
 
     if (huffmanTree.rightChild != null) {
         myCode += "1"
-        symbolCodes(huffmanTree.rightChild!!, myCode)
+        symbolCodes(huffmanTree.rightChild!!, myCode, codeMapping, codeMappingInvr)
     }
 
 }
@@ -163,18 +172,9 @@ private fun symbolPriorityQueue(asciiText: String) =
 /**
  * Returns the frequency of every symbol present in the file.
  * @param asciiText ascii text from the file.
- * @return map of count for each ascii character..
+ * @return Frequency map of each ascii character.
  */
-private fun symbolFrequency(asciiText: String): Map<Char, Int> {
-
-    val symbFreq = mutableMapOf<Char, Int>()
-
-    asciiText.forEach {
-        symbFreq[it] =
-            if (!symbFreq.containsKey(it)) 1
-            else symbFreq.getValue(it) + 1
-    }
-
-    return symbFreq
-
-}
+private fun symbolFrequency(asciiText: String) =
+    asciiText.chars()
+        .mapToObj { it.toChar() }
+        .collect(Collectors.groupingBy({ it }, Collectors.counting()))
